@@ -30,6 +30,7 @@ MonoBehaviour:
     m_Name: package.openupm.com
     m_Url: https://package.openupm.com
     m_Scopes:
+    - com.boundfoxstudios.fluentassertions
     - com.github-glitchenzo.nugetforunity
     - com.neuecc.unirx
     - com.svermeulen.extenject

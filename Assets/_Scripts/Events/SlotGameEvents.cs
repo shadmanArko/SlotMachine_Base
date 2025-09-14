@@ -14,7 +14,7 @@ namespace Controllers.Events
         public static event Action<ISpinResult> ShowSpinResult;
         public static event Action<string> ShowMessage;
         public static event Action<int> UpdatePayout;
-        public static event Action<int> OnSpinButtonPressed;
+        
         
         // Animation Events
         public static event Action StartReelAnimations;
