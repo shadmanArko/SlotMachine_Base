@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e796f6601e034cada11306865daca9f3, type: 3}
+  m_Name: DefaultSlotConfig
+  m_EditorClassIdentifier: 
+  reelCount: 5
+  rowCount: 3
+  minMatchCount: 3
+  symbolsData:
+  - id: 0
+    symbolName: Cherry
+    value: 10
+    symbolColor: {r: 1, g: 0, b: 0, a: 1}
+    symbolSprite: {fileID: 0}
+  - id: 1
+    symbolName: Lemon
+    value: 15
+    symbolColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    symbolSprite: {fileID: 0}
+  - id: 2
+    symbolName: Orange
+    value: 20
+    symbolColor: {r: 1, g: 0.5, b: 0, a: 1}
+    symbolSprite: {fileID: 0}
+  - id: 3
+    symbolName: Plum
+    value: 25
+    symbolColor: {r: 1, g: 0, b: 1, a: 1}
+    symbolSprite: {fileID: 0}
+  - id: 4
+    symbolName: Bell
+    value: 30
+    symbolColor: {r: 0, g: 1, b: 0, a: 1}
+    symbolSprite: {fileID: 0}
+  - id: 5
+    symbolName: Bar
+    value: 50
+    symbolColor: {r: 0, g: 0, b: 1, a: 1}
+    symbolSprite: {fileID: 0}
+  - id: 6
+    symbolName: Seven
+    value: 100
+    symbolColor: {r: 1, g: 1, b: 1, a: 1}
+    symbolSprite: {fileID: 0}
+  paylinesData:
+  - positions: 0500000006000000070000000800000009000000
+    lineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    isActive: 1
+  - positions: 0000000001000000020000000300000004000000
+    lineColor: {r: 1, g: 0, b: 0, a: 1}
+    isActive: 1
+  - positions: 0a0000000b0000000c0000000d0000000e000000
+    lineColor: {r: 0, g: 0, b: 1, a: 1}
+    isActive: 1
+  - positions: 00000000060000000c0000000800000004000000
+    lineColor: {r: 0, g: 1, b: 0, a: 1}
+    isActive: 1
+  - positions: 0a0000000600000002000000080000000e000000
+    lineColor: {r: 0, g: 1, b: 1, a: 1}
+    isActive: 1
+  spinDuration: 2
+  reelStopDelay: 0.3

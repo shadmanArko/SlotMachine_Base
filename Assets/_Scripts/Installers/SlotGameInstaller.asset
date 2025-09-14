@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4794e6c76b2d48029c4b10c731346c93, type: 3}
+  m_Name: SlotGameInstaller
+  m_EditorClassIdentifier: 
+  slotConfiguration: {fileID: 11400000, guid: adc3f1957f1c7460db2686d7d4e94821, type: 2}
+  gameSettings: {fileID: 11400000, guid: 659bd689ea0ea46e5a8a7362257e8021, type: 2}
+  slotMachineView: {fileID: 2038531886157830688, guid: 5df78d79ed6af44f7b0a7a67bed61db5, type: 3}
