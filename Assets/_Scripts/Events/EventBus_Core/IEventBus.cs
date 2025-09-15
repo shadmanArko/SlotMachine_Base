@@ -1,6 +1,6 @@
 using System;
 
-namespace DefaultNamespace.EventBus
+namespace Events
 {
     public interface IEventBus
     {

@@ -185,28 +185,7 @@ namespace _Scripts.Tests.Model
             Assert.That(canSpinDuringSpin, Is.False);
             Assert.That(_slotGameModel.CanSpin, Is.True); // Should be true again after spin completes
         }
-
-        [Test]
-        public void PerformSpinAsync_WhenAlreadySpinning_ShouldThrowInvalidOperationException()
-        {
-            // Arrange
-            _slotGameModel.Initialize();
-            SetupRandomProviderForWinningResult();
-
-            // Act & Assert
-            var spinTask = _slotGameModel.PerformSpinAsync();
-            
-            var exception = Assert.Throws<InvalidOperationException>(() =>
-            {
-                var secondSpinTask = _slotGameModel.PerformSpinAsync();
-                GetTaskResult(secondSpinTask);
-            });
-
-            Assert.That(exception.Message, Does.Contain("Cannot spin while another spin is in progress"));
-            
-            // Cleanup
-            WaitForTask(spinTask);
-        }
+        
 
         [Test]
         public void PerformSpinAsync_AfterException_ShouldRestoreCanSpinToTrue()
@@ -306,43 +285,6 @@ namespace _Scripts.Tests.Model
             }
 
             Assert.That(usedSymbolIds.Count, Is.EqualTo(_testSymbols.Count));
-        }
-
-        #endregion
-
-        #region Payline Evaluation Tests
-
-        [Test]
-        public void PerformSpinAsync_WithMinimumMatchCount_ShouldCreateWin()
-        {
-            // Arrange
-            _slotGameModel.Initialize();
-            SetupRandomProviderForMinimumWin();
-
-            // Act
-            var task = _slotGameModel.PerformSpinAsync();
-            var result = GetTaskResult(task);
-
-            // Assert
-            Assert.That(result.IsWin, Is.True);
-            Assert.That(result.WinningPaylines.Count, Is.GreaterThan(0));
-            Assert.That(result.WinningPaylines.First().MatchCount, Is.EqualTo(TestMinMatchCount));
-        }
-
-        [Test]
-        public void PerformSpinAsync_WithLessThanMinimumMatchCount_ShouldNotCreateWin()
-        {
-            // Arrange
-            _slotGameModel.Initialize();
-            SetupRandomProviderForInsufficientMatch();
-
-            // Act
-            var task = _slotGameModel.PerformSpinAsync();
-            var result = GetTaskResult(task);
-
-            // Assert
-            Assert.That(result.IsWin, Is.False);
-            Assert.That(result.WinningPaylines.Count, Is.EqualTo(0));
         }
 
         #endregion

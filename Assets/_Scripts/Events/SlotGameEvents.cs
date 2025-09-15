@@ -1,7 +1,7 @@
 using System;
 using _Scripts.Model;
 
-namespace Controllers.Events
+namespace Events
 {
     public class SlotGameEvents
     {

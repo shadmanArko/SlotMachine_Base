@@ -2,7 +2,7 @@ using System;
 using _Scripts.Model;
 using Controllers.Interfaces;
 using Cysharp.Threading.Tasks;
-using DefaultNamespace.EventBus;
+using Events;
 using UniRx;
 using Views;
 using Zenject;

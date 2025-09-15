@@ -1,7 +1,7 @@
 using _Scripts.Model;
 using Configs;
 using Controllers;
-using DefaultNamespace.EventBus;
+using Events;
 using UnityEngine;
 using Views;
 using Zenject;

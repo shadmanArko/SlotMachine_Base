@@ -1,7 +1,7 @@
 using System;
 using UniRx;
 
-namespace DefaultNamespace.EventBus
+namespace Events
 {
     public class UniRxEventBus : IEventBus
     {

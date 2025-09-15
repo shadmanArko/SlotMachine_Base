@@ -1,4 +1,4 @@
-namespace DefaultNamespace.EventBus
+namespace Events
 {
     public struct OnSpinButtonPressed
     {
